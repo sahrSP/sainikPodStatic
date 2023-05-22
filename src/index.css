@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.cdnfonts.com/css/poppins');
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 .cursive {
@@ -23,6 +24,12 @@ h1{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 200 px;
   text-transform: uppercase;
+}
+
+h2{
+  font-family: 'Poppins',Verdana,Tahoma sans-serif;
+  font-weight: 200;
+  
 }
 
 body {
