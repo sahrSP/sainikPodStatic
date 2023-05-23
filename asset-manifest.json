@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sahrSP/sainikPodStatic.git/static/css/main.bfefbbe3.css",
+    "main.js": "/sahrSP/sainikPodStatic.git/static/js/main.1649fe5b.js",
+    "static/js/787.1f830793.chunk.js": "/sahrSP/sainikPodStatic.git/static/js/787.1f830793.chunk.js",
+    "static/media/bg.jpg": "/sahrSP/sainikPodStatic.git/static/media/bg.5d36d4f8bd9c7d4c91ec.jpg",
+    "static/media/bgSmall.jpeg": "/sahrSP/sainikPodStatic.git/static/media/bgSmall.4a10fb79f4dfa22350fe.jpeg",
+    "static/media/clients.png": "/sahrSP/sainikPodStatic.git/static/media/clients.605891bf453b50e1203d.png",
+    "static/media/row-1.png": "/sahrSP/sainikPodStatic.git/static/media/row-1.42ee262fe990c5cdab0a.png",
+    "static/media/row.png": "/sahrSP/sainikPodStatic.git/static/media/row.84c171881d9ab1f8f993.png",
+    "static/media/logoDark.png": "/sahrSP/sainikPodStatic.git/static/media/logoDark.0fcad9c334e4ebdec7f7.png",
+    "static/media/electricCar.svg": "/sahrSP/sainikPodStatic.git/static/media/electricCar.18a15aa4c6493bbcf053fabc3a5aaebd.svg",
+    "index.html": "/sahrSP/sainikPodStatic.git/index.html",
+    "main.bfefbbe3.css.map": "/sahrSP/sainikPodStatic.git/static/css/main.bfefbbe3.css.map",
+    "main.1649fe5b.js.map": "/sahrSP/sainikPodStatic.git/static/js/main.1649fe5b.js.map",
+    "787.1f830793.chunk.js.map": "/sahrSP/sainikPodStatic.git/static/js/787.1f830793.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfefbbe3.css",
+    "static/js/main.1649fe5b.js"
+  ]
+}
