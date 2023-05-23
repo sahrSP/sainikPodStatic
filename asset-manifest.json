@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/sainikPodStatic.git/static/css/main.d5ea73cd.css",
-    "main.js": "/sainikPodStatic.git/static/js/main.1d377241.js",
-    "static/js/787.1f830793.chunk.js": "/sainikPodStatic.git/static/js/787.1f830793.chunk.js",
-    "static/media/bg.jpg": "/sainikPodStatic.git/static/media/bg.5d36d4f8bd9c7d4c91ec.jpg",
-    "static/media/bgSmall.jpeg": "/sainikPodStatic.git/static/media/bgSmall.4a10fb79f4dfa22350fe.jpeg",
-    "static/media/clients.png": "/sainikPodStatic.git/static/media/clients.605891bf453b50e1203d.png",
-    "static/media/row-1.png": "/sainikPodStatic.git/static/media/row-1.42ee262fe990c5cdab0a.png",
-    "static/media/row.png": "/sainikPodStatic.git/static/media/row.84c171881d9ab1f8f993.png",
-    "static/media/logoDark.png": "/sainikPodStatic.git/static/media/logoDark.0fcad9c334e4ebdec7f7.png",
-    "static/media/electricCar.svg": "/sainikPodStatic.git/static/media/electricCar.18a15aa4c6493bbcf053fabc3a5aaebd.svg",
-    "index.html": "/sainikPodStatic.git/index.html",
-    "main.d5ea73cd.css.map": "/sainikPodStatic.git/static/css/main.d5ea73cd.css.map",
-    "main.1d377241.js.map": "/sainikPodStatic.git/static/js/main.1d377241.js.map",
-    "787.1f830793.chunk.js.map": "/sainikPodStatic.git/static/js/787.1f830793.chunk.js.map"
+    "main.css": "/static/css/main.1fd62b13.css",
+    "main.js": "/static/js/main.90e7f6aa.js",
+    "static/js/787.1f830793.chunk.js": "/static/js/787.1f830793.chunk.js",
+    "static/media/bg.jpg": "/static/media/bg.5d36d4f8bd9c7d4c91ec.jpg",
+    "static/media/bgSmall.jpeg": "/static/media/bgSmall.4a10fb79f4dfa22350fe.jpeg",
+    "static/media/clients.png": "/static/media/clients.605891bf453b50e1203d.png",
+    "static/media/row-1.png": "/static/media/row-1.42ee262fe990c5cdab0a.png",
+    "static/media/row.png": "/static/media/row.84c171881d9ab1f8f993.png",
+    "static/media/logoDark.png": "/static/media/logoDark.0fcad9c334e4ebdec7f7.png",
+    "static/media/electricCar.svg": "/static/media/electricCar.18a15aa4c6493bbcf053fabc3a5aaebd.svg",
+    "index.html": "/index.html",
+    "main.1fd62b13.css.map": "/static/css/main.1fd62b13.css.map",
+    "main.90e7f6aa.js.map": "/static/js/main.90e7f6aa.js.map",
+    "787.1f830793.chunk.js.map": "/static/js/787.1f830793.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5ea73cd.css",
-    "static/js/main.1d377241.js"
+    "static/css/main.1fd62b13.css",
+    "static/js/main.90e7f6aa.js"
   ]
 }
