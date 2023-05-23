@@ -42,3 +42,12 @@ p{
 body {
   background-color: #f2f2f2;
 }
+
+ 
+
+/* For width 400px and larger: */
+@media only screen and (max-width: 400px) {
+  .bigBG { 
+     background-image: url('./assets/bg.jpg'); 
+  }
+}
