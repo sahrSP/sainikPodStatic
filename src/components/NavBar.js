@@ -6,12 +6,7 @@ export default function NavBar() {
 
   const controlStyleString =
     'inline-flex items-center text-white hover:text-green-800 cursive tracking-widest select-none'
-  // 'font-thin inline-flex items-center   text-red-100 hover:text-green-800  font-bold cursive tracking-widest'
 
-  //   const controlStyleString = ({ isActive }) =>
-  //     isActive
-  //       ? 'font-thin inline-flex items-center   text-red-100 hover:text-green-800  font-bold cursive tracking-widest'
-  //       : 'font-thin inline-flex items-center   text-red-100 hover:text-green-800  font-bold cursive tracking-widest'
   return (
     <header className="fixed inset-x-2 top-0 flex flex-row  z-10 text-white  bg-black bg-opacity-10">
       <div className="hidden container mx-auto md:flex justify-center ">
@@ -74,19 +69,21 @@ export default function NavBar() {
           </Link>
         </nav>
       </div>
+
+
       {/* Mobile menu button */}
       <div class="md:hidden flex ">
         <Link
           to="home"
           activeClass="active"
-          className='justify-center'
+          className='h-20 justify-end py-8'
           smooth
           spy
           style={{ cursor: 'pointer' }}
         >
           <img
             src={require('../assets/logoDark.png')}
-            className="object-scale-down  h-10 min-h-10"
+            className="object-scale-down  h-10 "
             alt="logo"
           />
         </Link>
@@ -128,21 +125,22 @@ export default function NavBar() {
             </svg>
           </div>
           <ul className="flex flex-col items-center justify-between min-h-[250px]">
-            <li className="border-b border-gray-400 my-8 uppercase">
+            <li className="cursive text-xl my-8 home-name">
               <a href="/">Home</a>
             </li>
-            <li className="border-b border-gray-400 my-8 uppercase">
-              <a href="/about">About</a>
+            <li className="cursive text-xl my-8 home-name">
+              <Link to="about" activeClass='active'>About</Link>
             </li>
-            <li className="border-b border-gray-400 my-8 uppercase">
-              <a href="/partners">Partners</a>
+            <li className="cursive text-xl my-8 home-name">
+              <a href="#partners">Partners</a>
             </li>
-            <li className="border-b border-gray-400 my-8 uppercase">
-              <a href="/contactUs">Contact Us</a>
+            <li className="cursive text-xl my-8 home-name">
+              <a href="#contactUs">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
+
       <style>{`
       .hideMenuNav {
         display: none;
@@ -154,7 +152,8 @@ export default function NavBar() {
         height: 100vh;
         top: 0;
         left: 0;
-        background: red;
+        background: #014052;
+        opacity: 0.9;
         z-index: 10;
         display: flex;
         flex-direction: column;
@@ -163,7 +162,7 @@ export default function NavBar() {
       }
       .active {
         font-weight: 500;
-        text-transform: uppercase
+        text-transform: uppercase;
         
       }
     

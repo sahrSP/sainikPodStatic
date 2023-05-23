@@ -32,6 +32,13 @@ h2{
   
 }
 
+p{
+  font-family: 'Poppins',Verdana,Tahoma sans-serif;
+  font-weight: 100;
+  color: #014052;
+  
+}
+
 body {
   background-color: #f2f2f2;
 }

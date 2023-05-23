@@ -6,14 +6,15 @@ import row from '../assets/row.png'
 export default function About() {
   return (
     <section id="about">
-      <section className="justify-center lg:pt-32 px-8 pt-12 select-none">
-        <h2 className="text-6xl font-light text-gray-700  text-center leading-none lg:leading-snug select-none">
+      <section className="justify-center pt-32 px-8 pt-12 select-none">
+        <h2 className="text-4xl font-light text-gray-700  text-center leading-none lg:leading-snug lg:text-6xl select-none">
           Features
         </h2>
+        <p className="text-xl font-light text-gray-700 pt-4  text-center leading-none lg:leading-snug lg:text-2xl select-none">100% Electric Fleet chauffered by Ex-Servicemen</p>
       </section>
-      <div class=" pt-10 flex flex-col  ">
+      <div class=" pt-5 flex flex-col  ">
           <img src={row} alt="" className='prose-img  select-none'/>
-          <img src={car} alt="" className='prose-img shrink w-1/2 py-10 select-none'/>
+          <img src={car} alt="" className='prose-img shrink w-1/2 py-5 select-none'/>
           <img src={row1} alt="" className='prose-img  select-none' />
           
         </div>
