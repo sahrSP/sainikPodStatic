@@ -65,7 +65,7 @@ export default function NavBar() {
             className={controlStyleString}
             style={{ cursor: 'pointer' }}
           >
-            Conatact Us
+            Contact Us
           </Link>
         </nav>
       </div>
