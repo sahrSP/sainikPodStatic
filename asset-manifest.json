@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1fd62b13.css",
-    "main.js": "/static/js/main.90e7f6aa.js",
+    "main.css": "/static/css/main.930f98ce.css",
+    "main.js": "/static/js/main.1a7ee380.js",
     "static/js/787.1f830793.chunk.js": "/static/js/787.1f830793.chunk.js",
     "static/media/bg.jpg": "/static/media/bg.5d36d4f8bd9c7d4c91ec.jpg",
     "static/media/bgSmall.jpeg": "/static/media/bgSmall.4a10fb79f4dfa22350fe.jpeg",
@@ -11,12 +11,12 @@
     "static/media/logoDark.png": "/static/media/logoDark.0fcad9c334e4ebdec7f7.png",
     "static/media/electricCar.svg": "/static/media/electricCar.18a15aa4c6493bbcf053fabc3a5aaebd.svg",
     "index.html": "/index.html",
-    "main.1fd62b13.css.map": "/static/css/main.1fd62b13.css.map",
-    "main.90e7f6aa.js.map": "/static/js/main.90e7f6aa.js.map",
+    "main.930f98ce.css.map": "/static/css/main.930f98ce.css.map",
+    "main.1a7ee380.js.map": "/static/js/main.1a7ee380.js.map",
     "787.1f830793.chunk.js.map": "/static/js/787.1f830793.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fd62b13.css",
-    "static/js/main.90e7f6aa.js"
+    "static/css/main.930f98ce.css",
+    "static/js/main.1a7ee380.js"
   ]
 }
