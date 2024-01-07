@@ -45,9 +45,3 @@ body {
 
  
 
-/* For width 400px and larger: */
-@media only screen and (max-width: 400px) {
-  .bigBG { 
-     background-image: url('./assets/bg.jpg'); 
-  }
-}
