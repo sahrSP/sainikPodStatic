@@ -17,7 +17,8 @@ export default function About() {
         </p>
       </section>
 
-      <div class=" pt-10 grid grid-rows-1 gap-4 lg:grid-cols-2 lg:gap-4">
+      <div class=" pt-10 grid grid-rows-1
+       gap-4 lg:grid-cols-2 lg:gap-4">
         <div className="justify-start p-20 order-last">
           <h1 className="text-xl font-light text-gray-700  text-left lg:text-3xl">
             SainikPod
