@@ -54,9 +54,10 @@ type/motion system built since. Result:
   and tames the bright sky, plus a left gradient (`from-abyss/80 via-abyss/40`) under the type
   column and a base-to-top wash. GOTCHA: `/85` is NOT in Tailwind's default opacity scale — the
   class silently generates nothing; use /80 or /90.
-- Headline "electrified." effect (rev. 3.2): **amber static + travelling sparks** (client asked
-  for "yellow static and sparks flowing through it organically"). Three layers: (1) base word
-  with `amberStatic` — uneven micro-flickers of warm amber text-shadow, 5.3s; (2)+(3) two
+- Headline "electrified." effect (rev. 3.3): **electric-aqua static + travelling sparks**.
+  Client first asked for yellow, then preferred the original aqua (#35E0C2) — keep the volt
+  color for this effect. Three layers: (1) base word
+  with `electricStatic` — uneven micro-flickers of aqua text-shadow, 5.3s; (2)+(3) two
   absolutely-positioned text copies (`.electric-spark`, aria-hidden) clipped with
   `background-clip: text`, each carrying a narrow white-hot amber band that travels through the
   letterforms (`sparkTravel` 4.7s L→R, `sparkTravelBack` 7.9s R→L, delayed). KEY TRICK:

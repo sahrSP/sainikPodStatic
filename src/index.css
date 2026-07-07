@@ -150,29 +150,29 @@ button:focus-visible {
 .electric-text {
   position: relative;
   color: var(--porcelain);
-  text-shadow: 0 0 12px rgba(247, 164, 34, 0.2), 0 0 36px rgba(247, 164, 34, 0.08);
-  animation: amberStatic 5.3s linear infinite;
+  text-shadow: 0 0 12px rgba(53, 224, 194, 0.22), 0 0 36px rgba(53, 224, 194, 0.1);
+  animation: electricStatic 5.3s linear infinite;
 }
 
-@keyframes amberStatic {
+@keyframes electricStatic {
   /* resting hum */
   0%, 12.4%, 14.2%, 15.1%, 33%, 34.6%, 60.5%, 62.8%, 100% {
     color: var(--porcelain);
-    text-shadow: 0 0 12px rgba(247, 164, 34, 0.2), 0 0 36px rgba(247, 164, 34, 0.08);
+    text-shadow: 0 0 12px rgba(53, 224, 194, 0.22), 0 0 36px rgba(53, 224, 194, 0.1);
   }
   /* static ticks — quick, small, uneven */
   13%, 14.6% {
-    color: #fffdf5;
-    text-shadow: 0 0 10px rgba(255, 243, 214, 0.7), 0 0 30px rgba(247, 164, 34, 0.5);
+    color: #f2fffc;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 30px rgba(53, 224, 194, 0.55);
   }
   33.8% {
-    color: #fff9ec;
-    text-shadow: 0 0 8px rgba(255, 243, 214, 0.55), 0 0 24px rgba(247, 164, 34, 0.4);
+    color: #f0fffc;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.55), 0 0 24px rgba(53, 224, 194, 0.45);
   }
   61.4% {
-    color: #fffdf5;
-    text-shadow: 0 0 12px rgba(255, 243, 214, 0.75), 0 0 34px rgba(247, 164, 34, 0.55),
-      0 0 80px rgba(247, 164, 34, 0.25);
+    color: #eafffa;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.75), 0 0 34px rgba(53, 224, 194, 0.6),
+      0 0 80px rgba(53, 224, 194, 0.28);
   }
 }
 
@@ -184,9 +184,9 @@ button:focus-visible {
     105deg,
     transparent 0%,
     transparent 42%,
-    rgba(247, 164, 34, 0.9) 47%,
-    #fff3d6 50%,
-    rgba(247, 164, 34, 0.9) 53%,
+    rgba(53, 224, 194, 0.9) 47%,
+    #eafffb 50%,
+    rgba(53, 224, 194, 0.9) 53%,
     transparent 58%,
     transparent 100%
   );
@@ -196,8 +196,8 @@ button:focus-visible {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  filter: drop-shadow(0 0 5px rgba(247, 164, 34, 0.95))
-    drop-shadow(0 0 16px rgba(247, 164, 34, 0.5));
+  filter: drop-shadow(0 0 5px rgba(53, 224, 194, 0.95))
+    drop-shadow(0 0 16px rgba(53, 224, 194, 0.5));
   opacity: 0;
   animation: sparkTravel 4.7s cubic-bezier(0.55, 0.06, 0.35, 0.95) infinite;
 }
@@ -308,7 +308,7 @@ button:focus-visible {
   .electric-text {
     animation: none;
     transform: none;
-    text-shadow: 0 0 12px rgba(247, 164, 34, 0.2);
+    text-shadow: 0 0 12px rgba(53, 224, 194, 0.22);
   }
   .electric-spark {
     display: none;
