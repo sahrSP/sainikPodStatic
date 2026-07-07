@@ -54,13 +54,16 @@ type/motion system built since. Result:
   and tames the bright sky, plus a left gradient (`from-abyss/80 via-abyss/40`) under the type
   column and a base-to-top wash. GOTCHA: `/85` is NOT in Tailwind's default opacity scale — the
   class silently generates nothing; use /80 or /90.
-- Headline "electrified." effect (rev. 3.1): the gradient shimmer sweep was replaced with a
-  **voltage flicker** (`.electric-text`, `voltFlicker` 7.4s) at client request ("more realistic,
-  like static/lightning") — two uneven stutter-bursts per cycle where the word flashes white-hot
-  with an aqua discharge glow (layered text-shadows, trace of amber at the fringe) and a ±1px
-  jitter, then a long resting hum. Sharp ~35ms ramps between rest and strike frames read as
-  flashes; strikes at 7–11.5% and 56% of the cycle so it never feels looped. Reduced motion:
-  static soft aqua glow, no flicker. Load stagger (`hero-seq-1…5`) preserved.
+- Headline "electrified." effect (rev. 3.2): **amber static + travelling sparks** (client asked
+  for "yellow static and sparks flowing through it organically"). Three layers: (1) base word
+  with `amberStatic` — uneven micro-flickers of warm amber text-shadow, 5.3s; (2)+(3) two
+  absolutely-positioned text copies (`.electric-spark`, aria-hidden) clipped with
+  `background-clip: text`, each carrying a narrow white-hot amber band that travels through the
+  letterforms (`sparkTravel` 4.7s L→R, `sparkTravelBack` 7.9s R→L, delayed). KEY TRICK:
+  `filter: drop-shadow(amber)` on the clipped layer glows only where the band's lit pixels are,
+  so the glow travels WITH the spark through the glyphs. Mismatched prime-ish durations keep
+  crossings organic. Reduced motion: static amber glow, spark layers `display: none` (without
+  animation their gradient band would sit frozen mid-word). Load stagger preserved.
 - A pulsing amber scroll cue (`.scroll-cue`) sits at the base of the landing (desktop).
 - The **orbit ring was removed** — it overlapped the nav/hero on mobile. The plate-drift refs
   were also removed from the hero (a sticky section never moves relative to the viewport, so

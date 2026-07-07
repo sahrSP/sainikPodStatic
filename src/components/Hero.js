@@ -71,7 +71,11 @@ export default function Hero() {
               <h1 className="font-display font-light uppercase text-porcelain tracking-luxe leading-[1.1] text-[2.4rem] sm:text-5xl md:text-6xl lg:text-7xl mt-8">
                 <span className="hero-seq hero-seq-2 block">Discipline,</span>
                 <span className="hero-seq hero-seq-3 block">
-                  <span className="electric-text inline-block">electrified.</span>
+                  <span className="electric-text inline-block">
+                    electrified.
+                    <span className="electric-spark" aria-hidden="true">electrified.</span>
+                    <span className="electric-spark electric-spark--b" aria-hidden="true">electrified.</span>
+                  </span>
                 </span>
               </h1>
               <p className="hero-seq hero-seq-4 text-porcelain text-base md:text-lg leading-loose max-w-lg mt-8">
