@@ -54,7 +54,13 @@ type/motion system built since. Result:
   and tames the bright sky, plus a left gradient (`from-abyss/80 via-abyss/40`) under the type
   column and a base-to-top wash. GOTCHA: `/85` is NOT in Tailwind's default opacity scale — the
   class silently generates nothing; use /80 or /90.
-- Headline shimmer uses the `--light` variant; load stagger (`hero-seq-1…5`) preserved.
+- Headline "electrified." effect (rev. 3.1): the gradient shimmer sweep was replaced with a
+  **voltage flicker** (`.electric-text`, `voltFlicker` 7.4s) at client request ("more realistic,
+  like static/lightning") — two uneven stutter-bursts per cycle where the word flashes white-hot
+  with an aqua discharge glow (layered text-shadows, trace of amber at the fringe) and a ±1px
+  jitter, then a long resting hum. Sharp ~35ms ramps between rest and strike frames read as
+  flashes; strikes at 7–11.5% and 56% of the cycle so it never feels looped. Reduced motion:
+  static soft aqua glow, no flicker. Load stagger (`hero-seq-1…5`) preserved.
 - A pulsing amber scroll cue (`.scroll-cue`) sits at the base of the landing (desktop).
 - The **orbit ring was removed** — it overlapped the nav/hero on mobile. The plate-drift refs
   were also removed from the hero (a sticky section never moves relative to the viewport, so

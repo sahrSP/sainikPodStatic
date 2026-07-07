@@ -141,28 +141,50 @@ button:focus-visible {
   }
 }
 
-/* ---- "electrified" shimmer: the one electric moment in the type ---- */
-.shimmer-text {
-  background: linear-gradient(
-    100deg,
-    var(--ink) 0%,
-    var(--ink) 32%,
-    var(--amber) 46%,
-    #35e0c2 54%,
-    var(--ink) 68%,
-    var(--ink) 100%
-  );
-  background-size: 300% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--ink);
-  animation: shimmerSweep 6s ease-in-out infinite;
+/* ---- "electrified." — voltage flicker ----
+   Real electricity doesn't sweep; it catches. Two uneven stutter-bursts per
+   cycle: rapid white-hot flashes with an aqua discharge glow and a hairline
+   jitter, then a long quiet hum. Sharp ramps (~35ms) read as flashes. */
+.electric-text {
+  color: var(--porcelain);
+  text-shadow: 0 0 14px rgba(53, 224, 194, 0.22), 0 0 40px rgba(53, 224, 194, 0.1);
+  animation: voltFlicker 7.4s linear infinite;
 }
 
-@keyframes shimmerSweep {
-  0%, 55% { background-position: 110% 0; }
-  85%, 100% { background-position: -60% 0; }
+@keyframes voltFlicker {
+  /* resting hum */
+  0%, 6.5%, 8.2%, 9.3%, 10.6%, 13%, 55%, 57.6%, 100% {
+    color: var(--porcelain);
+    text-shadow: 0 0 14px rgba(53, 224, 194, 0.22), 0 0 40px rgba(53, 224, 194, 0.1);
+    transform: none;
+  }
+  /* burst one: stutter catching */
+  7%, 9% {
+    color: #f2fffc;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.85), 0 0 28px rgba(53, 224, 194, 0.85),
+      0 0 70px rgba(53, 224, 194, 0.4);
+    transform: translateX(-1px);
+  }
+  /* full strike */
+  10% {
+    color: #eafffa;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.95), 0 0 36px rgba(53, 224, 194, 1),
+      0 0 90px rgba(53, 224, 194, 0.55), 0 0 130px rgba(247, 164, 34, 0.3);
+    transform: translateX(1px) skewX(-0.6deg);
+  }
+  /* decay */
+  11.5% {
+    color: #f2fffc;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.6), 0 0 24px rgba(53, 224, 194, 0.5);
+    transform: none;
+  }
+  /* burst two: a single distant arc */
+  56.2% {
+    color: #f0fffc;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.75), 0 0 30px rgba(53, 224, 194, 0.75),
+      0 0 70px rgba(53, 224, 194, 0.35);
+    transform: translateX(-0.5px);
+  }
 }
 
 /* ---- aurora: slow-drifting electric glow ---- */
@@ -209,25 +231,6 @@ button:focus-visible {
   100% { transform: scaleY(0.3); opacity: 0.3; }
 }
 
-/* light shimmer for type sitting on the hero photograph */
-.shimmer-text--light {
-  background: linear-gradient(
-    100deg,
-    var(--porcelain) 0%,
-    var(--porcelain) 32%,
-    var(--amber) 46%,
-    #35e0c2 54%,
-    var(--porcelain) 68%,
-    var(--porcelain) 100%
-  );
-  background-size: 300% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--porcelain);
-  animation: shimmerSweep 6s ease-in-out infinite;
-}
-
 /* ---- road divider: the brand car drives with your scroll ---- */
 .road-car {
   will-change: transform;
@@ -267,19 +270,14 @@ button:focus-visible {
     transform: none;
     animation: none;
   }
-  .shimmer-text--light {
+  .electric-text {
     animation: none;
-    background: none;
-    -webkit-text-fill-color: currentColor;
+    transform: none;
+    text-shadow: 0 0 14px rgba(53, 224, 194, 0.22);
   }
   .rule-grow {
     width: 3rem;
     transition: none;
-  }
-  .shimmer-text {
-    animation: none;
-    background: none;
-    -webkit-text-fill-color: currentColor;
   }
   .aurora--drift,
   .aurora--drift-late,
